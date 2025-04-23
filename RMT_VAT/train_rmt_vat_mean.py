@@ -25,28 +25,7 @@ from torchvision.io.image import read_image
 from torchvision.models.segmentation import deeplabv3_resnet101, DeepLabV3_ResNet101_Weights
 from torchvision.models.segmentation.deeplabv3 import DeepLabHead
 from torchvision.transforms.functional import to_pil_image
-
 import torch
-print("Torch version:", torch.__version__)
-print("CUDA version:", torch.version.cuda)
-print("cuDNN version:", torch.backends.cudnn.version())
-
-print(torch.cuda.is_available())  # Should be True
-print(torch.cuda.device_count())  # Should be >= 1
-print(torch.cuda.current_device())  # Should not raise an error
-print(torch.cuda.get_device_name(0))  # Should print "NVIDIA RTX A5000"
-
-# import torch
-# torch.backends.cuda.matmul.allow_tf32 = False
-# torch.backends.cudnn.benchmark = True
-# torch.backends.cudnn.deterministic = True
-# torch.backends.cudnn.allow_tf32 = True
-# data = torch.randn([4, 192, 56, 56], dtype=torch.float, device='cuda', requires_grad=True).to(memory_format=torch.channels_last)
-# net = torch.nn.Conv2d(192, 48, kernel_size=[3, 3], padding=[1, 1], stride=[1, 1], dilation=[1, 1], groups=1)
-# net = net.cuda().float().to(memory_format=torch.channels_last)
-# out = net(data)
-# out.backward(torch.randn_like(out))
-# torch.cuda.synchronize()
 
 
 

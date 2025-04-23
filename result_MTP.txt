@@ -1,0 +1,232 @@
+python train_rmt_vat_mean.py --gpu 1 --out output/skin/skin50_tcsm/rmt_vat --lr 1e-4 --n-labeled 50 --consistency 1.0 --consistency_rampup 600 --epochs 800 --batch-size 16 \
+--num-class 2 --val-iteration 10
+
+dlv3:
+📘 Student Model:
+Accuracy: 0.9771
+Precision: 0.7482
+Recall: 0.8908
+Mean IoU: 0.7103
+Per-class IoU: Soil: 0.9766, Crop: 0.7677, Weed: 0.3867
+
+📗 Teacher Model:
+Accuracy: 0.9733
+Precision: 0.7330
+Recall: 0.8762
+Mean IoU: 0.6862
+Per-class IoU: Soil: 0.9730, Crop: 0.7329, Weed: 0.3528
+
+Pre-trained Dlv3:
+📘 Student Model:
+Accuracy: 0.9750
+Precision: 0.7585
+Recall: 0.9144
+Mean IoU: 0.7169
+Per-class IoU: Soil: 0.9752, Crop: 0.8022, Weed: 0.3733
+
+📗 Teacher Model:
+Accuracy: 0.9759
+Precision: 0.7636
+Recall: 0.9088
+Mean IoU: 0.7215
+Per-class IoU: Soil: 0.9758, Crop: 0.8096, Weed: 0.3791
+
+Unet:
+📘 Student Model:
+Accuracy: 0.9666
+Precision: 0.6683
+Recall: 0.9396
+Mean IoU: 0.6480
+Per-class IoU: Soil: 0.9661, Crop: 0.6102, Weed: 0.3678
+
+📗 Teacher Model:
+Accuracy: 0.7741
+Precision: 0.4063
+Recall: 0.6269
+Mean IoU: 0.3323
+Per-class IoU: Soil: 0.7823, Crop: 0.0184, Weed: 0.1961
+
+Pre-trained Unet_49:
+📘 Student Model:
+Accuracy: 0.9902
+Precision: 0.8745
+Recall: 0.9419
+Mean IoU: 0.8418
+Per-class IoU: Soil: 0.9902, Crop: 0.9402, Weed: 0.5949
+
+📗 Teacher Model:
+Accuracy: 0.9894
+Precision: 0.8640
+Recall: 0.9465
+Mean IoU: 0.8350
+Per-class IoU: Soil: 0.9893, Crop: 0.9383, Weed: 0.5775
+
+Dense-Unet:
+📘 Student Model:
+Accuracy: 0.9865
+Precision: 0.8447
+Recall: 0.8943
+Mean IoU: 0.7874
+Per-class IoU: Soil: 0.9864, Crop: 0.8605, Weed: 0.5153
+
+📗 Teacher Model:
+Accuracy: 0.9760
+Precision: 0.7554
+Recall: 0.9197
+Mean IoU: 0.7200
+Per-class IoU: Soil: 0.9759, Crop: 0.7923, Weed: 0.3919
+
+Pre-trained Dense-Unet:
+📘 Student Model:
+Accuracy: 0.9835
+Precision: 0.8140
+Recall: 0.9391
+Mean IoU: 0.7857
+Per-class IoU: Soil: 0.9834, Crop: 0.9068, Weed: 0.4669
+
+📗 Teacher Model:
+Accuracy: 0.9811
+Precision: 0.8067
+Recall: 0.9255
+Mean IoU: 0.7607
+Per-class IoU: Soil: 0.9817, Crop: 0.8643, Weed: 0.4360
+
+
+ERFNet:
+📘 Student Model:
+Accuracy: 0.9743
+Precision: 0.6783
+Recall: 0.6636
+Mean IoU: 0.5747
+Per-class IoU: Soil: 0.9746, Crop: 0.6261, Weed: 0.1234
+
+📗 Teacher Model:
+Accuracy: 0.9714
+Precision: 0.7037
+Recall: 0.5759
+Mean IoU: 0.5300
+Per-class IoU: Soil: 0.9717, Crop: 0.4803, Weed: 0.1381
+
+
+Segnet:
+📘 Model:
+Accuracy: 0.9744
+Precision: 0.6357
+Recall: 0.5654
+Mean IoU: 0.5044
+Per-class IoU: Soil: 0.9757, Crop: 0.5198, Weed: 0.0178
+
+Pre-trained Segnet:
+📘 Model:
+Accuracy: 0.9775
+Precision: 0.7026
+Recall: 0.6928
+Mean IoU: 0.5787
+Per-class IoU: Soil: 0.9811, Crop: 0.5903, Weed: 0.1649
+
+DLV3+resnet101:
+📘 Model:
+Accuracy: 0.9776
+Precision: 0.7465
+Recall: 0.7994
+Mean IoU: 0.6555
+Per-class IoU: Soil: 0.9798, Crop: 0.6227, Weed: 0.3639
+
+Pre-trained DLV3+resnet101:
+📘 Model:
+Accuracy: 0.9789
+Precision: 0.7546
+Recall: 0.8616
+Mean IoU: 0.6776
+Per-class IoU: Soil: 0.9826, Crop: 0.6517, Weed: 0.3984
+
+Pre-trained Cutmix_49:
+📘 Student Model:
+Accuracy: 0.9848
+Precision: 0.8310
+Recall: 0.9471
+Mean IoU: 0.8004
+Per-class IoU: Soil: 0.9848, Crop: 0.9269, Weed: 0.4896
+
+📗 Teacher Model:
+Accuracy: 0.9838
+Precision: 0.8231
+Recall: 0.9525
+Mean IoU: 0.7957
+Per-class IoU: Soil: 0.9837, Crop: 0.9283, Weed: 0.4751
+
+Pre-trained Unet mean-teacher only:
+📘 Student Model:
+Accuracy: 0.9867
+Precision: 0.8300
+Recall: 0.8863
+Mean IoU: 0.7509
+Per-class IoU: Soil: 0.9890, Crop: 0.6593, Weed: 0.6044
+
+📗 Teacher Model:
+Accuracy: 0.9867
+Precision: 0.8309
+Recall: 0.8864
+Mean IoU: 0.7517
+Per-class IoU: Soil: 0.9891, Crop: 0.6612, Weed: 0.6049
+
+Unet mean-teacher only:
+📘 Student Model:
+Accuracy: 0.9871
+Precision: 0.8413
+Recall: 0.8857
+Mean IoU: 0.7706
+Per-class IoU: Soil: 0.9875, Crop: 0.7672, Weed: 0.5570
+
+📗 Teacher Model:
+Accuracy: 0.9871
+Precision: 0.8412
+Recall: 0.8858
+Mean IoU: 0.7705
+Per-class IoU: Soil: 0.9874, Crop: 0.7669, Weed: 0.5572
+
+Pre-trained Unet_35:
+📘 Student Model:
+Accuracy: 0.9885
+Precision: 0.8545
+Recall: 0.9471
+Mean IoU: 0.8282
+Per-class IoU: Soil: 0.9883, Crop: 0.9425, Weed: 0.5538
+
+📗 Teacher Model:
+Accuracy: 0.9877
+Precision: 0.8483
+Recall: 0.9481
+Mean IoU: 0.8223
+Per-class IoU: Soil: 0.9876, Crop: 0.9396, Weed: 0.5398
+
+Pre-trained Unet_25:
+#Labeled: 49 #Unlabeled: 350 #Val: 101 #Test: 101
+📘 Student Model:
+Accuracy: 0.9887
+Precision: 0.8587
+Recall: 0.9223
+Mean IoU: 0.8133
+Per-class IoU: Soil: 0.9894, Crop: 0.9000, Weed: 0.5507
+
+📗 Teacher Model:
+Accuracy: 0.9879
+Precision: 0.8478
+Recall: 0.9030
+Mean IoU: 0.7895
+Per-class IoU: Soil: 0.9895, Crop: 0.8509, Weed: 0.5281
+
+Pre-trained Unet_15:
+📘 Student Model:
+Accuracy: 0.9888
+Precision: 0.8590
+Recall: 0.9183
+Mean IoU: 0.8112
+Per-class IoU: Soil: 0.9896, Crop: 0.8931, Weed: 0.5509
+
+📗 Teacher Model:
+Accuracy: 0.9866
+Precision: 0.8343
+Recall: 0.8650
+Mean IoU: 0.7464
+Per-class IoU: Soil: 0.9901, Crop: 0.7539, Weed: 0.4952
